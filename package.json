@@ -1,0 +1,23 @@
+{
+  "name": "cypress_automation",
+  "version": "1.0.0",
+  "description": "client_test_suites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open:development": "cypress open --env configFile=development",
+    "cy:open:dev:chrome": "cypress open --browser chrome --env configFile=development",
+    "cy:run:dev": "cypress run --env configFile=development",
+    "cy:open:staging": "cypress open --env configFile=stag",
+    "cy:run:staging": "cypress run --env configFile=stag"
+  },
+  "extends": [
+    "plugin:cypress/recommended"
+  ],
+  "author": "WaleedKhan",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.5.1",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}
